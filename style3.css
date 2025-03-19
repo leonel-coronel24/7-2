@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    /* background-image: url(fondo-blanco-diseno-textura-simple_1124848-112261.avif); */
+    background-image: url('fondopapelofficial1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 0;
+    /* object-fit: cover; */
+
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+/* Contenedor principal que usa grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Tres columnas */
+    grid-template-rows: auto auto auto;
+    /* Tres filas */
+    gap: 20px;
+    /* Espacio entre los elementos */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Estilos de los cuadros */
+.cuadrado {
+    border: 2px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilo para los cuadros que ocupan varias columnas o filas */
+.weather {
+    grid-column: 1 / 2;
+    /* Primera columna */
+    grid-row: 1;
+    /* Primera fila */
+}
+
+.important {
+    grid-column: 2 / 4;
+    /* De la segunda a la tercera columna */
+    grid-row: 1 / 3;
+    /* Ocupa dos filas */
+    text-align: left;
+    /* Alineado a la izquierda */
+}
+
+.qr {
+    grid-column: 1;
+    /* Primera columna */
+    grid-row: 2;
+    /* Segunda fila */
+}
+
+.contact {
+    grid-column: 1 / 4;
+    /* Ocupa toda la fila (3 columnas) */
+    grid-row: 3;
+    /* Tercera fila */
+
+}
+
+h2 {
+    color: blue;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* Para hacer los íconos del clima */
+.weather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather div {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-size: 60px;
+
+    margin-top: 150px;
+}
+
+footer {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.texto_footer {
+    width: 100%;
+    display: inline-flex;
+    color: white;
+    font-size: 2rem;
+}
+
+.contenedor-imagenes {
+    height: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 1rem 0 1rem;
+    padding: 0rem;
+    gap: 1rem;
+    color: blue;
+    border: 2px solid rgba(255, 0, 0, 0);
+}

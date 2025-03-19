@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    /* background-image: url(fondo-blanco-diseno-textura-simple_1124848-112261.avif); */
+    background-image: url('fondopapelofficial1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Se asegura de que la imagen ocupe toda la altura visible */
+    margin: 0;
+    /* object-fit: cover; */
+
+    transition: opacity 1s ease-in-out;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+.tituloprincipal {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgba(0, 0, 255, 0.699); */
+    color:  rgb(58, 58, 255);
+    font-size: 27px;
+}
+
+/* //////////////////////////////////////////////////////////// */
+.contenedor-imagenes {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 1rem 0 1rem; 
+    padding: 0rem;
+    gap: 1rem;
+    color: rgb(58, 58, 255);
+    border: 2px solid rgba(255, 0, 0, 0);
+}
+
+.organizador {
+    width: 45%;
+    height: 45%;
+    border: 2px solid rgb(58, 58, 255);
+    padding: 1px 1px 30px 1px;
+    overflow: hidden;
+}
+
+.organizador2 {
+    width: 45%;
+    height: 45%;
+    border: 2px solid  rgb(58, 58, 255);
+    padding: 1px 1px 1px 1px;
+    overflow: hidden;
+}
+
+.contenido_organizador {
+    height: 100%;
+    width: 100%;
+}
+.contenido_organizador2 {
+    height: 100%;
+    width: 100%;
+}
+
+.titulo_contenido {
+    /* margin-top: 1rem; */
+    color: rgb(58, 58, 255);
+    font-weight: bold;
+}
+
+.video {
+    background-color: #3b3b3b;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    background-color:  rgb(58, 58, 255);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.texto_footer {
+    width: 100%;
+    display: inline-flex;
+    color: white;
+    font-size: 2rem;
+}
+
+.tdpato {
+    margin: 0px;
+}
+
+.tabla{
+    
+    border-color:#3b3b3b 1px;
+}
+.pato{
+    margin: 2px;
+}
+
+.clima{
+    width: 100%; 
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.hora{
+    font-size: 50px;
+    margin-right: 20px;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cuadrodeclima {
+    display: block !important; /* Asegúrate de que se comporte como un bloque */
+    width: 100% !important; /* Forzar a que ocupe el 100% del ancho del contenedor */
+    max-width: none !important; /* Elimina cualquier restricción de ancho máximo */
+    height: auto !important; /* Asegúrate de que ajuste la altura */
+    font-size: 100% !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Hace que el padding no sume al ancho total */
+}
